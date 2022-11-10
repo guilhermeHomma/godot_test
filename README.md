@@ -38,7 +38,7 @@ Rode o jogo pressionando a tecla "F5" ou o botão "play" da godot<br><br>
 
 
 <h1>-----Adendos-----</h1>
-Adicinei algumas <b>features</b> que não estavam presentes no vídeo de demonstração do projeto. Porêm essas adições não mudam em nada na funcionalidade do jogo. Como:
+Adicinei algumas <b>features</b> que não estavam presentes no vídeo de demonstração do projeto. Porêm essas adições não mudam em nada na funcionalidade do jogo. Como por exemplo:
 
  1 - Após encontrar a formiga, o jogador pode reiniciar o jogo pressionando ```ENTER``` <br>
  
