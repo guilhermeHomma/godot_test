@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/wrap/lol_01_opened.png" type="Texture" id=1]
+[ext_resource path="res://assets/sounds/apito.ogg" type="AudioStream" id=2]
+[ext_resource path="res://scripts/candy/candy_sounds.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "show"
+length = 3.7
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 0.392293, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -140 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1.36604, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="packing_anim" type="Sprite"]
+z_index = 1
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+autoplay = "show"
+anims/show = SubResource( 1 )
+
+[node name="AudioOpen" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+
+[node name="AudioResult" type="AudioStreamPlayer2D" parent="."]

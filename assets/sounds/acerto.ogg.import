@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/acerto.ogg-c9a7905e7acd6f505d5dcf84916a57b9.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/acerto.ogg"
+dest_files=[ "res://.import/acerto.ogg-c9a7905e7acd6f505d5dcf84916a57b9.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
