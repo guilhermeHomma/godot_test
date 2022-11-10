@@ -46,7 +46,10 @@ Adicinei algumas <b>features</b> que não estavam presentes no vídeo de demonst
 
  <img src="https://github.com/guilhermeHomma/godot_test/blob/master/README_IMGs/configs.png"> <br>
  
- 3 - As imagens das embalagens dos doces, presentes na animação de revelação, são agora renderizadas por cima das outras imagens.
+ 3 - Com o intuito de melhorar a qualidade visual. As imagens das embalagens dos doces, presentes na animação de revelação, são agora renderizadas por cima das outras imagens.<br>
+ Antes: (vídeo demonstração)<br>
+ <img src="https://github.com/guilhermeHomma/godot_test/blob/master/README_IMGs/antes.png"> 
 
-
+ Agora:<br>
+ <img src="https://github.com/guilhermeHomma/godot_test/blob/master/README_IMGs/agora.png"> <br>
 
