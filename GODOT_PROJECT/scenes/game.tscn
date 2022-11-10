@@ -18,24 +18,24 @@
 [ext_resource path="res://scripts/points_manager.gd" type="Script" id=16]
 [ext_resource path="res://assets/sounds/loop_espera.ogg" type="AudioStream" id=18]
 
-[sub_resource type="BitmapFont" id=11]
+[sub_resource type="BitmapFont" id=7]
 textures = [ ExtResource( 4 ) ]
 chars = PoolIntArray( 56, 0, 0, 187, 56, 100, 0, 0, 56, 48, 0, 59, 95, 50, 90, 0, 0, 50, 57, 0, 0, 93, 54, 95, 0, 0, 54, 49, 0, 221, 95, 43, 92, 0, 0, 43, 50, 0, 116, 191, 49, 92, 0, 0, 49, 51, 0, 116, 94, 52, 94, 0, 0, 52, 52, 0, 0, 0, 57, 93, 0, 0, 57, 53, 0, 57, 189, 52, 95, 0, 0, 52, 54, 0, 112, 0, 54, 93, 0, 0, 54, 55, 0, 167, 0, 56, 98, 0, 0, 56 )
 
-[sub_resource type="Theme" id=12]
-default_font = SubResource( 11 )
+[sub_resource type="Theme" id=8]
+default_font = SubResource( 7 )
 
-[sub_resource type="BitmapFont" id=13]
+[sub_resource type="BitmapFont" id=9]
 textures = [ ExtResource( 4 ) ]
 chars = PoolIntArray( 56, 0, 0, 187, 56, 100, 0, 0, 56, 48, 0, 59, 95, 50, 90, 0, 0, 50, 57, 0, 0, 93, 54, 95, 0, 0, 54, 49, 0, 221, 95, 43, 92, 0, 0, 43, 50, 0, 116, 191, 49, 92, 0, 0, 49, 51, 0, 116, 94, 52, 94, 0, 0, 52, 52, 0, 0, 0, 57, 93, 0, 0, 57, 53, 0, 57, 189, 52, 95, 0, 0, 52, 54, 0, 112, 0, 54, 93, 0, 0, 54, 55, 0, 167, 0, 56, 98, 0, 0, 56 )
 
-[sub_resource type="Theme" id=14]
-default_font = SubResource( 13 )
+[sub_resource type="Theme" id=10]
+default_font = SubResource( 9 )
 
 [sub_resource type="CircleShape2D" id=5]
 radius = 68.6754
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=6]
 resource_name = "loop_anim"
 length = 1.4
 loop = true
@@ -73,7 +73,7 @@ margin_top = 114.0
 margin_right = 1368.0
 margin_bottom = 224.0
 rect_scale = Vector2( 0.32, 0.32 )
-theme = SubResource( 12 )
+theme = SubResource( 8 )
 text = "400"
 align = 1
 autowrap = true
@@ -81,6 +81,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+used_font = 0
 
 [node name="Total_label" type="Label" parent="points_manager"]
 modulate = Color( 1, 0, 0, 0.784314 )
@@ -89,7 +90,7 @@ margin_top = 58.0
 margin_right = 890.0
 margin_bottom = 149.0
 rect_scale = Vector2( 0.6, 0.6 )
-theme = SubResource( 14 )
+theme = SubResource( 10 )
 text = "400"
 align = 1
 autowrap = true
@@ -97,6 +98,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+used_font = 0
 
 [node name="candy_manager" type="Node2D" parent="."]
 script = ExtResource( 15 )
@@ -281,4 +283,4 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Press_enter_label"]
-anims/loop_anim = SubResource( 10 )
+anims/loop_anim = SubResource( 6 )
